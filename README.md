@@ -100,7 +100,7 @@
 ## 🐳 Run Locally with Docker
 
 ```bash
-git clone https://github.com/yourusername/3dhub.am.git
+git clone https://github.com/Hrant-mik/3dhub.am.git
 cd 3dhub.am
 docker-compose up --build
 Access the app at http://localhost:8000
