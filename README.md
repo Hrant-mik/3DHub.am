@@ -1,6 +1,6 @@
 # 🧩 3DHub.am
 
-**3DHub.am** is an interactive web platform for creating, viewing, sharing, printing, and scanning 3D models. Designed for designers, engineers, students, and technology enthusiasts.
+**3DHub.am** is an interactive web platform for viewing, sharing, printing, and scanning 3D models. Designed for designers, engineers, students, and technology enthusiasts.
 
 ---
 
