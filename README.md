@@ -97,17 +97,56 @@
 
 ---
 
-## 🐳 Run Locally with Docker
+# 📦 3DHub.am – Run Locally with Docker
 
-```bash
-git clone https://github.com/Hrant-mik/3dhub.am.git
-cd 3dhub.am
-docker-compose up --build
-Access the app at http://localhost:8000
+A local development setup using Docker for 3DHub.am.
+
+---
+
+## 🐳 Prerequisites – Install Docker
+
+Before running the project, make sure Docker and Docker Compose are installed.
+
+### ✅ Install Docker:
+
+- **Windows:**  
+  [Download Docker Desktop for Windows](https://www.docker.com/products/docker-desktop)
+
+- **macOS:**  
+  [Download Docker Desktop for macOS](https://www.docker.com/products/docker-desktop)
+
+- **Ubuntu/Linux:**  
+  Run the following commands:
+
+  ```bash
+  sudo apt update
+  sudo apt install docker.io docker-compose -y
+  sudo systemctl start docker
+  sudo systemctl enable docker
+  sudo usermod -aG docker $USER
+  newgrp docker
+- **To verify Docker is working, run:**
+
+  ```bash
+  docker --version
+  docker-compose --version
+
+## 🚀 Run the App Locally
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Hrant-mik/3dhub.am.git
+   cd 3dhub.am/myproject
+   
+**Build and run the project with Docker Compose:**
+
+    docker-compose up --build
+
+Open the app in your browser:
+
+👉 http://localhost:8000
 
 🤝 Contributing
 Contributions are welcome! Please open an issue before submitting major changes.
 Pull requests are appreciated.
-
-📄 License
-Licensed under the MIT License.
