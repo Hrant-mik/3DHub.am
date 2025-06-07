@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}3DHub.am{% endblock %}</title>
+    <style>
+        nav {
+            background-color: #222;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'main:home' %}">🏠 Home</a>
+    <a href="{% url 'main:printing' %}">🖨️ 3D Printing</a>
+    <a href="{% url 'main:modeling' %}">📐 3D Modeling</a>
+    <a href="{% url 'main:scanning' %}">📷 3D Scanning</a>
+    <a href="{% url 'main:contact' %}">📨 Contact</a>
+    <a href="{% url 'main:sign_in' %}">🔐 sign_in</a>
+</nav>
+
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
