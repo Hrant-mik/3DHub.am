@@ -1,20 +1,20 @@
-# Используем официальный образ Python
+# Use official Python image
 FROM python:3.11-slim
 
-# Устанавливаем рабочую директорию
+# Set up working directory
 WORKDIR /app
 
-# Копируем файлы зависимостей
+# Copy dependency files
 COPY requirements.txt /app/
 
-# Устанавливаем зависимости
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копируем весь проект в контейнер
+# Copy entire project to container
 COPY . /app/
 
-# Открываем порт для Django
+# Open port for Django
 EXPOSE 8000
 
-# Команда запуска сервера
+# Server startup command
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
